@@ -6,3 +6,9 @@ echo "4" > file4.txt && git add . && git commit -m "asdf"
 echo "5" > file5.txt && git add . && git commit -m "feat part 2"
 
 git rebase -i HEAD~5
+
+reword <커밋해시1> feat: implement core feature part 1
+squash <커밋해시2>
+squash <커밋해시3>
+reword <커밋해시4> feat: implement core feature part 2
+squash <커밋해시5>
