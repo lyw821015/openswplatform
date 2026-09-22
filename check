@@ -12,3 +12,10 @@ squash <커밋해시2>
 squash <커밋해시3>
 reword <커밋해시4> feat: implement core feature part 2
 squash <커밋해시5>
+
+echo "experimental change" >> file1.txt
+git stash
+git checkout main
+git checkout feature
+git stash pop
+git add . && git commit -m "feat: add experimental change"
