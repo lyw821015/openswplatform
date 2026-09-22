@@ -4,3 +4,5 @@ echo "2" > file2.txt && git add . && git commit -m "bad msg 2"
 echo "3" > file3.txt && git add . && git commit -m "fix typo"
 echo "4" > file4.txt && git add . && git commit -m "asdf"
 echo "5" > file5.txt && git add . && git commit -m "feat part 2"
+
+git rebase -i HEAD~5
