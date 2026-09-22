@@ -19,3 +19,13 @@ git checkout main
 git checkout feature
 git stash pop
 git add . && git commit -m "feat: add experimental change"
+
+# feature 브랜치에서 체리픽할 커밋 해시 확인 (상단 1-2개 중 하나 복사)
+git log --oneline -n 3
+
+# release-hotfix 브랜치 생성 및 이동
+git checkout main
+git checkout -b release-hotfix
+
+# 복사한 커밋 해시 체리픽
+git cherry-pick <복사한_커밋_해시>
