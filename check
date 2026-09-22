@@ -29,3 +29,14 @@ git checkout -b release-hotfix
 
 # 복사한 커밋 해시 체리픽
 git cherry-pick <복사한_커밋_해시>
+
+git checkout feature
+
+# 의도적으로 이전 상태로 강제 리셋
+git reset --hard HEAD~1
+
+# reflog로 리셋 직전의 HEAD 위치 확인
+git reflog
+
+# 리셋 직전 상태로 복구 (HEAD@{1} 또는 이전 커밋 해시 사용)
+git reset --hard HEAD@{1}
