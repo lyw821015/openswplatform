@@ -1,4 +1,4 @@
-
+git log --oneline -100 > log_2417032.txt
 echo "1" > file1.txt && git add . && git commit -m "wip 1"
 echo "2" > file2.txt && git add . && git commit -m "bad msg 2"
 echo "3" > file3.txt && git add . && git commit -m "fix typo"
